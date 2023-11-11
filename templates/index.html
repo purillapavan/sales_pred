@@ -1,0 +1,22 @@
+<h1>hello Welcome to Sales Prediction</h1>
+<div  class="container text-center" >
+<form action ='/predict'method=POST>
+    <input type="'text" name="TV" placeholder="TV_invest"><br><br>
+    
+    <input type="'text" name="newspaper" placeholder="newspaper_invest"><br><br>
+
+    <input type="'text" name="radio" placeholder="radio_invest"><br>
+
+
+    <br><br>
+
+    <button class="btn btn-Success">Predict</button>
+</form>
+
+
+<div class="row">
+    {% if prediction %}
+    <h2  class="'text-warning">{{prediction}}</h2>
+</div>
+{% endif %}
+</div>
